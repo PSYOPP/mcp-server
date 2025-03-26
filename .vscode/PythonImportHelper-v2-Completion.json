@@ -1,0 +1,144 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Server",
+        "importPath": "mcp.server",
+        "description": "mcp.server",
+        "isExtraImport": true,
+        "detail": "mcp.server",
+        "documentation": {}
+    },
+    {
+        "label": "Tool",
+        "importPath": "mcp.types",
+        "description": "mcp.types",
+        "isExtraImport": true,
+        "detail": "mcp.types",
+        "documentation": {}
+    },
+    {
+        "label": "TextContent",
+        "importPath": "mcp.types",
+        "description": "mcp.types",
+        "isExtraImport": true,
+        "detail": "mcp.types",
+        "documentation": {}
+    },
+    {
+        "label": "ImageContent",
+        "importPath": "mcp.types",
+        "description": "mcp.types",
+        "isExtraImport": true,
+        "detail": "mcp.types",
+        "documentation": {}
+    },
+    {
+        "label": "EmbeddedResource",
+        "importPath": "mcp.types",
+        "description": "mcp.types",
+        "isExtraImport": true,
+        "detail": "mcp.types",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Sandbox",
+        "importPath": "e2b_code_interpreter",
+        "description": "e2b_code_interpreter",
+        "isExtraImport": true,
+        "detail": "e2b_code_interpreter",
+        "documentation": {}
+    },
+    {
+        "label": "ToolSchema",
+        "kind": 6,
+        "importPath": "packages.python.src.e2b_mcp_server.server",
+        "description": "packages.python.src.e2b_mcp_server.server",
+        "peekOfCode": "class ToolSchema(BaseModel):\n    code: str\napp = Server(\"e2b-code-mcp-server\")\n@app.list_tools()\nasync def list_tools() -> list[Tool]:\n    \"\"\"List available tools.\"\"\"\n    return [\n        Tool(\n            name=\"run_code\",\n            description=\"Run python code in a secure sandbox by E2B. Using the Jupyter Notebook syntax.\",",
+        "detail": "packages.python.src.e2b_mcp_server.server",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "packages.python.src.e2b_mcp_server.server",
+        "description": "packages.python.src.e2b_mcp_server.server",
+        "peekOfCode": "logger = logging.getLogger(\"e2b-mcp-server\")\n# Tool schema\nclass ToolSchema(BaseModel):\n    code: str\napp = Server(\"e2b-code-mcp-server\")\n@app.list_tools()\nasync def list_tools() -> list[Tool]:\n    \"\"\"List available tools.\"\"\"\n    return [\n        Tool(",
+        "detail": "packages.python.src.e2b_mcp_server.server",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "packages.python.src.e2b_mcp_server.server",
+        "description": "packages.python.src.e2b_mcp_server.server",
+        "peekOfCode": "app = Server(\"e2b-code-mcp-server\")\n@app.list_tools()\nasync def list_tools() -> list[Tool]:\n    \"\"\"List available tools.\"\"\"\n    return [\n        Tool(\n            name=\"run_code\",\n            description=\"Run python code in a secure sandbox by E2B. Using the Jupyter Notebook syntax.\",\n            inputSchema=ToolSchema.model_json_schema()\n        )",
+        "detail": "packages.python.src.e2b_mcp_server.server",
+        "documentation": {}
+    }
+]
